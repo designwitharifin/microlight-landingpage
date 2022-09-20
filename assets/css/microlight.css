@@ -212,9 +212,13 @@ body {
 /* 👉 Banner Section */
 
 .banner {
-    background-image: url('/assets/img/Banner/Section.svg');
+    background: linear-gradient(270deg,
+            #304FFF 40.52%,
+            rgba(60, 44, 255, 0) 100%), url(/assets/img/background/bg-banner-btn.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: var(--white);
     padding: 1rem;
 }
 
