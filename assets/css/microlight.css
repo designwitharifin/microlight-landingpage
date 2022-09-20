@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/**
+ * Microlight
+ *
+ * Microlight is a clean & modern HTML5 admin template based on Bootstrap v5.2
+ * Microlight will make it easier for you to create your own admin interface.
+ *
+ * @package	Microlight
+ * @version	1.0.0
+ * @author 	designwitharfin
+ * @url 	https://microlight.xyz
+ *
+ */
+
+/**
+ *
+ * Google Fonts
+ * You can update or custom font family
+ * 
+ */
+
+/* ✍️ Plus Jakarta Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+
+/* ✍️ Manrope */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/**
+ *
+ * General Setup
+ * This is a public components custom
+ * 
+ */
+
+/* ✍️ Fonts Family */
+
+header,
+section.banner,
+section.info .card-body p,
+section.tell {
+    font-family: 'Manrope';
+}
+
+
+/* 🦴 Body  */
+
+body {
+    font-family: 'Plus Jakarta Sans';
+}
+
+/* 🕹️ Buttons  */
+
+.btn {
+    padding: 12px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    transition: all 0.5s;
+    font-family: 'Plus Jakarta Sans';
+}
+
+/* Button primary */
+.btn-primary {
+    background-color: var(--primary-500);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-700) !important;
+    border: none;
+}
+
+/* Button Secondary */
+.btn-outline-secondary {
+    border: 1px solid var(--secondary-300);
+    background-color: var(--white);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary-200) !important;
+    color: var(--secondary-700) !important;
+    border: 1px solid var(--secondary-200) !important;
+}
+
+/* Button Light */
+.btn-light {
+    background-color: var(--white);
+    color: var(--primary-500);
+    font-weight: 600;
+}
+
+.btn-light:hover {
+    color: var(--primary-500) !important;
+}
+
+/* ♣️ Card  */
+
+.card {
+    border-radius: 21px;
+    box-shadow: 0px 4px 80px rgba(69, 27, 255, 0.07);
+    border: 0;
+}
+
+/* ✍️ Text */
+
+.text-primary {
+    color: var(--primary-500) !important;
+}
+
+
+/* 🎨 Colors */
+:root {
+
+    /* Primary Color */
+    --primary-50: #E7E2FF;
+    --primary-100: #E4DEFF;
+    --primary-200: #B4A3F9;
+    --primary-300: #886CFF;
+    --primary-400: #624AFF;
+    --primary-500: #551CFF;
+    --primary-600: #4518F9;
+    --primary-700: #3B14DA;
+    --primary-800: #3411C0;
+    --primary-900: #2D129B;
+
+    /* Secondary Color */
+    --secondary-50: #F7FAFC;
+    --secondary-100: #EDF2F7;
+    --secondary-200: #E2E8F0;
+    --secondary-300: #CBD5E0;
+    --secondary-400: #A0AEC0;
+    --secondary-500: #718096;
+    --secondary-600: #4A5568;
+    --secondary-700: #1F2733;
+    --secondary-800: #1A202C;
+    --secondary-900: #171923;
+
+    /* Success Color */
+    --success-50: #f0fdf4;
+    --success-100: #dcfce7;
+    --success-200: #bbf7d0;
+    --success-300: #86efac;
+    --success-400: #4ade80;
+    --success-500: #22c55e;
+    --success-600: #16a34a;
+    --success-700: #15803d;
+    --success-800: #166534;
+    --success-900: #14532d;
+
+    /* Danger Color */
+    --danger-50: #FFF5F5;
+    --danger-100: #FED7D7;
+    --danger-200: #FED7D7;
+    --danger-300: #FC8181;
+    --danger-400: #F56565;
+    --danger-500: #FD4141;
+    --danger-600: #C53030;
+    --danger-700: #9B2C2C;
+    --danger-800: #822727;
+    --danger-900: #63171B;
+
+
+    /* Warning Color */
+    --warning-50: #FFFFF0;
+    --warning-100: #FEFCBF;
+    --warning-200: #FAF089;
+    --warning-300: #F6E05E;
+    --warning-400: #FACC15;
+    --warning-500: #EAB308;
+    --warning-600: #CA8A04;
+    --warning-700: #A16207;
+    --warning-800: #854D0E;
+    --warning-900: #713F12;
+
+    /* Info Color */
+    --info-50: #EBF8FF;
+    --info-100: #BEE3F8;
+    --info-200: #90CDF4;
+    --info-300: #63B2EC;
+    --info-400: #4299E1;
+    --info-500: #3182CE;
+    --info-600: #2B6CB0;
+    --info-700: #2C5282;
+    --info-800: #2A4365;
+    --info-900: #1A365D;
+
+    /* Black & White Color */
+    --black: #000000;
+    --white: #FFFFFF;
+
+    /* Shadow */
+    --shadow-xs: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+    --shadow-sm: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+    --shadow-md: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
+    --shadow-lg: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    --shadow-xl: 0px 2px 8px rgba(40, 41, 61, 0.04), 0px 16px 24px rgba(96, 97, 112, 0.16);
+    --shadow2xl: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+
+}
+
+/**
+ *
+ * [index.html file]
+ * You can update or custom css for index.html file here
+ * 
+ */
+
+
+/* 👉 Banner Section */
+
+.banner {
+    background-image: url('/assets/img/Banner/Section.svg');
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.banner h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+/* 👉 Navbar Section */
+
+.navbar {
+    padding: 33px 0;
+    transition: all 0.5s !important;
+}
+
+.navbr-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar a.nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: -1px;
+    color: var(--secondary-600);
+}
+
+.navbar a.nav-link:hover {
+    color: var(--black);
+}
+
+.navbar .bx {
+    color: var(--primary-900);
+    vertical-align: middle;
+}
+
+.navbar .bx:hover {
+    color: var(--black);
+}
+
+.line {
+    width: 1px;
+    height: 42px;
+    background: #718096;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.navbar .btn-outline-secondary {
+    background-color: var(--white);
+    color: var(--secondary-700);
+    font-weight: 600;
+}
+
+
+/* 👉 Hero Section */
+
+section.hero {
+    padding: 20px 0;
+}
+
+section.hero .text-hero {
+    padding: 45px 0;
+}
+
+section.hero .text-hero h1 {
+    font-size: 46px;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: var(--secondary-900);
+}
+
+section.hero .text-hero span {
+    font-weight: 800;
+}
+
+section.hero .text-hero p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 172.5%;
+    letter-spacing: -1px;
+    color: var(--secondary-500);
+}
+
+.hero .headline {
+    display: inline-block;
+    background-color: var(--secondary-100);
+    color: var(--primary-500);
+    border-radius: 30px;
+    padding: 7px 7px 7px 7px;
+    font-size: 15px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    line-height: 19px;
+    transition: all 0.5s;
+}
+
+.hero .headline:hover {
+    background-color: var(--secondary-50);
+    box-shadow: var(--shadow-sm);
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.hero .badge.text-bg-danger {
+    padding: 4px 10px;
+    background-color: var(--danger-500) !important;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+section.hero .cta {
+    padding: 28px 0;
+}
+
+
+section.hero .p-hero {
+    margin-left: 16px !important;
+}
+
+/* 👉 Info Section */
+
+section.info {
+    padding: 223px 0;
+    background-image: url('/assets/img/background/backgrund-card.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 25rem;
+}
+
+section.info .header-section-info {
+    max-width: 640px;
+    min-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 145%;
+}
+
+section.info .header-section-info span {
+    color: var(--primary-500);
+}
+
+section.info p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--secondary-500);
+}
+
+section.info .cards {
+    padding: 155px 0;
+}
+
+section.info .card {
+    margin-bottom: 24px;
+}
+
+section.info .card-body {
+    padding: 39px 40px;
+}
+
+section.info .card-body h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--secondary-900);
+}
+
+section.info .card-body p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--primary-300);
+}
+
+section.info .card-body .bg-icon {
+    background-color: var(--secondary-100);
+}
+
+/* 👉 Tell Section */
+
+section.tell {
+    padding-bottom: 242px;
+}
+
+section.tell .text {
+    padding-top: 9rem;
+}
+
+section.tell .text h5 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--secondary-900);
+}
+
+
+section.tell .text span {
+    color: var(--primary-500);
+}
+
+section.tell .text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--secondary-500);
+    padding: 34px 0;
+}
+
+section.tell .text a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-500) !important;
+    text-decoration: none;
+}
+
+/* 👉 Superiority Section */
+
+section.superiority {
+    padding-bottom: 142px;
+}
+
+section.superiority h5 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--secondary-900);
+}
+
+section.superiority span {
+    color: var(--primary-500);
+}
+
+section.superiority p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--secondary-500);
+    padding: 34px 0;
+}
+
+section.superiority span.desc-icon {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 170.1%;
+    color: var(--secondary-900);
+}
+
+section.superiority .icon-items {
+    margin-bottom: 29px;
+}
+
+.bg-icons {
+    border-radius: 10px;
+    background-color: var(--secondary-100);
+}
+
+
+/* 👉 Try Section */
+
+
+section.try {
+    background: linear-gradient(270deg,
+            #304FFF 40.52%,
+            rgba(60, 44, 255, 0) 100%), url(/assets/img/background/bg-banner-btn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    color: var(--white);
+}
+
+section.try h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 170.1%;
+}
+
+section.try p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170.1%;
+}
+
+/* MOBILE VERSION ONLY */
+
+@media (max-width: 576px) {
+    /**
+    *
+    * General Setup
+    * This is a public components custom
+    * 
+    */
+
+    /* 🕹️ Buttons  */
+    .btn {
+        display: block;
+    }
+
+    /**
+    *
+    * [index.html file]
+    * You can update or custom css for index.html file here
+    * 
+    */
+
+    /* 👉 Navbar Section */
+
+    .line {
+        display: none !important;
+    }
+
+    /* 👉 Hero Section */
+    section.hero .p-hero {
+        margin-left: 0 !important;
+    }
+
+    /* 👉 Info Section */
+    section.info {
+        padding: 223px 0;
+    }
+
+    section.info .header-section-info {
+        max-width: auto;
+        min-width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+
+/* 📱 Mobile Devices */
+@media (max-width: 576px) {
+
+    /**
+    *
+    * General Setup
+    * This is a public components custom
+    * 
+    */
+
+    /* 🕹️ Buttons  */
+    .btn {
+        display: block;
+    }
+
+    /**
+    *
+    * [index.html file]
+    * You can update or custom css for index.html file here
+    * 
+    */
+
+    /* 👉 Navbar Section */
+
+    .line {
+        display: none !important;
+    }
+
+}
+
+/* 📱 Tablet Devices*/
+@media (max-width: 991.98px) {
+    .line {
+        display: none !important;
+    }
+
+
+    /* 👉 Hero Section */
+    section.hero {
+        padding: 68px 0;
+    }
+
+    section.info .header-section-info {
+        max-width: auto;
+        min-width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+/* 🖥️ Desktop Devices */
+@media (max-width: 992px) {
+    .line {
+        display: none !important;
+    }
+}
