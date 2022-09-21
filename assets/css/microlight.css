@@ -39,7 +39,8 @@
 header,
 section.banner,
 section.info .card-body p,
-section.tell {
+section.tell,
+footer .about {
     font-family: 'Manrope';
 }
 
@@ -108,6 +109,10 @@ body {
 
 .text-primary {
     color: var(--primary-500) !important;
+}
+
+.text-primary-900 {
+    color: var(--primary-900);
 }
 
 
@@ -496,7 +501,6 @@ section.superiority .icon-items {
 
 /* 👉 Try Section */
 
-
 section.try {
     background: linear-gradient(270deg,
             #304FFF 40.52%,
@@ -518,6 +522,60 @@ section.try p {
     font-weight: 400;
     font-size: 20px;
     line-height: 170.1%;
+}
+
+/* 👉 Footer Section */
+footer {
+    background-color: var(--white);
+    padding: 20px 0;
+}
+
+footer .about p {
+    font-weight: 400;
+    color: var(--secondary-500);
+    line-height: 210%;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+footer .about a {
+    color: var(--secondary-600);
+    font-weight: 600;
+}
+
+footer small.copy {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 197%;
+    color: var(--secondary-500);
+}
+
+footer .icons {
+    padding: 30px 0;
+}
+
+.icons a {
+    color: var(--primary-900);
+}
+
+footer .h6 {
+    font-size: 18px;
+    color: var(--secondary-900);
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+footer li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--secondary-500);
+    text-decoration: none;
+}
+
+footer ul li.item {
+    padding-bottom: 17px;
 }
 
 /* MOBILE VERSION ONLY */
