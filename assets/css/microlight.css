@@ -637,6 +637,12 @@ footer ul li.item {
         line-height: 40px;
     }
 
+    section.hero .text-hero p {
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0;
+    }
+
     /* 👉 Info Section */
     section.info {
         padding: 223px 0;
