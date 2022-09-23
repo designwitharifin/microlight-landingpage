@@ -300,8 +300,7 @@ section.hero .text-hero {
 section.hero .text-hero h1 {
     font-size: 46px;
     font-weight: 400;
-    font-size: 46px;
-    line-height: var(--secondary-900);
+    line-height: 58px;
 }
 
 section.hero .text-hero span {
@@ -607,8 +606,35 @@ footer ul li.item {
     }
 
     /* 👉 Hero Section */
+
+    section.hero {
+        text-align: center;
+    }
+
+    .hero .badge.text-bg-danger {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    section.hero .text-hero {
+        padding: 0;
+    }
+
     section.hero .p-hero {
         margin-left: 0 !important;
+    }
+
+    .hero .headline {
+        font-size: 13px;
+        margin-bottom: 19px;
+        font-weight: 500;
+        line-height: 16px;
+        transition: all 0.5s;
+    }
+
+    section.hero .text-hero h1 {
+        font-size: 32px;
+        line-height: 40px;
     }
 
     /* 👉 Info Section */
