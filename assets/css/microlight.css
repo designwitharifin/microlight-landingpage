@@ -40,14 +40,16 @@ header,
 section.banner,
 section.info .card-body p,
 section.tell,
-footer .about {
+footer .about,
+section.card-getting-started .card-body p {
     font-family: 'Manrope';
 }
 
 
 /* 🦴 Body  */
 
-body {
+body,
+header.getting-started h1.page-header-title {
     font-family: 'Plus Jakarta Sans';
 }
 
@@ -522,6 +524,99 @@ section.try p {
     line-height: 170.1%;
 }
 
+/**
+ *
+ * [getting-started file]
+ * You can update or custom css for index.html file here
+ * 
+ */
+
+
+/* 👉Hero Getting Started  Section */
+
+header.getting-started {
+    background: linear-gradient(270deg,
+            #304FFF 10.52%,
+            rgba(85, 28, 255, 0) 100%), url(/assets/img/hero/bg-hero-getting-started.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+header.getting-started h1.page-header-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+header.getting-started p.page-header-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.mt-n10 {
+    margin-top: -6rem !important;
+}
+
+.pb-10 {
+    padding-bottom: 6rem !important;
+}
+
+section.card-getting-started .cards {
+    padding: 155px 0;
+}
+
+section.getting-started .card {
+    margin-bottom: 24px;
+}
+
+section.card-getting-started .card-body {
+    padding: 39px 40px;
+    text-align: center;
+}
+
+section.card-getting-started .card-body h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--secondary-900);
+}
+
+section.card-getting-started .card-body p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--primary-300);
+}
+
+section.card-getting-started .card-body .bg-icon {
+    background-color: var(--secondary-100);
+}
+
+/* 👉 Present Section */
+section.present {
+    padding: 212px 0;
+    text-align: center;
+}
+
+section.present .present-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 875px;
+    margin: 0 auto;
+    color: var(--secondary-900);
+}
+
+section.present .present-img {
+    padding: 73px 0;
+}
+
 /* 👉 Footer Section */
 
 footer {
@@ -770,6 +865,68 @@ footer ul li.item {
         font-weight: 700;
         font-size: 12px;
         letter-spacing: 0;
+    }
+
+
+    /* 👉Hero Getting Started  Section */
+
+    header.getting-started {
+        background: linear-gradient(270deg,
+                #304FFF 10.52%,
+                rgba(85, 28, 255, 0) 100%), url(/assets/img/hero/bg-hero-getting-started.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: var(--white);
+    }
+
+    header.getting-started h1.page-header-title {
+        font-size: 21px;
+        line-height: 30px;
+        padding: 1px 0 !important;
+        margin: 0 auto !important;
+    }
+
+    header.getting-started p.page-header-subtitle {
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 313px;
+        margin: 0 auto;
+        padding: 11px 0;
+    }
+
+    .mt-n10 {
+        margin-top: -4rem !important;
+    }
+
+    .pb-10 {
+        padding-bottom: 0.5rem !important;
+    }
+
+    section.card-getting-started .cards {
+        padding: 10px 0;
+    }
+
+    section.getting-started .card {
+        margin-bottom: 32px;
+    }
+
+
+    /* 👉 Present Section */
+    section.present {
+        padding: 180px 0;
+        text-align: center;
+    }
+
+    section.present .present-header h1 {
+        font-size: 32px;
+        line-height: 48px;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    section.present .present-img {
+        padding: 71px 0;
     }
 
 }
