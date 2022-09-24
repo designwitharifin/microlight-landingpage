@@ -524,6 +524,7 @@ section.try p {
 }
 
 /* 👉 Footer Section */
+
 footer {
     background-color: var(--white);
     padding: 20px 0;
@@ -644,8 +645,12 @@ footer ul li.item {
     }
 
     /* 👉 Info Section */
+
     section.info {
-        padding: 223px 0;
+        padding: 113px 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: 50rem;
     }
 
     section.info .header-section-info {
@@ -654,6 +659,107 @@ footer ul li.item {
         margin: 0 auto;
         text-align: center;
     }
+
+    section.info h1 {
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    section.info p {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    section.info .cards {
+        padding: 60px 0;
+    }
+
+    section.info .card {
+        margin-bottom: 37px;
+    }
+
+    /* 👉 Tell Section */
+
+    section.tell {
+        padding-bottom: 142px;
+        text-align: center;
+    }
+
+    section.tell .text {
+        padding-top: 43px;
+    }
+
+    section.tell .text h5 {
+        line-height: 150%;
+    }
+
+    section.tell .text p {
+        font-size: 16px;
+        line-height: 170%;
+        padding: 20px 0;
+    }
+
+    section.tell .text a {
+        font-size: 15px;
+        line-height: 14px;
+    }
+
+    /* 👉 Superiority Section */
+
+    section.superiority {
+        padding-bottom: 122px;
+        text-align: center;
+    }
+
+    section.superiority h5 {
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    section.superiority p {
+        font-size: 16px;
+        line-height: 170%;
+        padding: 16px 0;
+    }
+
+    section.superiority span.desc-icon {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 170.1%;
+        color: var(--secondary-900);
+    }
+
+    section.superiority .icon-items {
+        margin-bottom: 18px;
+    }
+
+    section.superiority .icons {
+        margin-bottom: 122px;
+    }
+
+
+    /* 👉 Try Section */
+
+    section.try {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    section.try h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    section.try p {
+        font-size: 15px;
+    }
+
+    section.try a.btn {
+        display: block;
+        float: none !important;
+    }
+
 
 }
 
