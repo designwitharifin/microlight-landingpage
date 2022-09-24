@@ -607,6 +607,11 @@ footer ul li.item {
 
     /* 👉 Hero Section */
 
+    .hero .cta .btn-primary,
+    .btn-outline-secondary {
+        margin-right: auto !important;
+    }
+
     section.hero {
         text-align: center;
     }
@@ -801,8 +806,9 @@ footer ul li.item {
 
     .hero .cta .btn-primary,
     .btn-outline-secondary {
-        margin-right: 0;
+        margin-right: 10px;
     }
+
 
     .hero .badge.text-bg-danger {
         font-size: 11px;
