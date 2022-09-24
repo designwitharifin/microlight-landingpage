@@ -771,8 +771,10 @@ footer ul li.item {
 
 
 
-/* 📱 Tablet Devices*/
-@media (max-width: 991.98px) {
+
+
+/* 📱 Tablet Devices Small */
+@media (min-width: 768px) {
     /**
     *
     * General Setup
@@ -799,7 +801,7 @@ footer ul li.item {
 
     .hero .cta .btn-primary,
     .btn-outline-secondary {
-        margin-right: 1rem;
+        margin-right: 0;
     }
 
     .hero .badge.text-bg-danger {
@@ -951,6 +953,179 @@ footer ul li.item {
         float: none !important;
     }
 
+}
+
+/* 📱 Tablet Devices Medium & Large */
+@media (max-width: 991.98px) {
+    /**
+    *
+    * General Setup
+    * This is a public components custom
+    * 
+    */
+
+
+
+    /**
+    *
+    * [index.html file]
+    * You can update or custom css for index.html file here
+    * 
+    */
+
+    /* 👉 Navbar Section */
+
+    .line {
+        display: none !important;
+    }
+
+    /* 👉 Hero Section */
+
+    .hero .badge.text-bg-danger {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    section.hero .text-hero {
+        padding: 0;
+    }
+
+    section.hero .p-hero {
+        margin-left: 0 !important;
+    }
+
+    .hero .headline {
+        font-size: 13px;
+        margin-bottom: 28px;
+        font-weight: 500;
+        line-height: 16px;
+        transition: all 0.5s;
+    }
+
+
+    section.hero .text-hero p {
+        font-size: 15px;
+        line-height: 172.5%;
+        letter-spacing: 0;
+    }
+
+    /* 👉 Info Section */
+
+    section.info {
+        padding: 145px 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: 50rem;
+    }
+
+    section.info .header-section-info {
+        max-width: auto;
+        min-width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section.info h1 {
+        font-size: 36px;
+        line-height: 145%;
+    }
+
+    section.info p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    section.info .cards {
+        padding: 60px 0;
+    }
+
+    section.info .card {
+        margin-bottom: 37px;
+    }
+
+    /* 👉 Tell Section */
+
+    section.tell {
+        padding-bottom: 142px;
+        text-align: center;
+    }
+
+    section.tell .text {
+        padding-top: 43px;
+    }
+
+    section.tell .text h5 {
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    section.tell .text p {
+        font-size: 16px;
+        line-height: 170%;
+        padding: 20px 0;
+    }
+
+    section.tell .text a {
+        font-size: 15px;
+        line-height: 14px;
+    }
+
+    /* 👉 Superiority Section */
+
+    section.superiority {
+        padding-bottom: 122px;
+        text-align: center;
+    }
+
+    section.superiority h5 {
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    section.superiority p {
+        font-size: 16px;
+        line-height: 170%;
+        padding: 16px 0;
+    }
+
+    section.superiority span.desc-icon {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 170.1%;
+        color: var(--secondary-900);
+    }
+
+    section.superiority .icon-items {
+        margin-bottom: 18px;
+    }
+
+    section.superiority .icons {
+        margin-bottom: 122px;
+    }
+
+
+    /* 👉 Try Section */
+
+    section.try {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    section.try h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    section.try p {
+        font-size: 15px;
+    }
+
+    section.try a.btn {
+        /* display: block; */
+        float: none !important;
+    }
+
     /* 👉 Banner Section */
 
     .banner h5 {
@@ -958,6 +1133,7 @@ footer ul li.item {
         font-size: 12px;
         letter-spacing: 0;
     }
+
 
 }
 
