@@ -774,7 +774,7 @@ footer ul li.item {
 
 
 /* 📱 Tablet Devices Small */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     /**
     *
     * General Setup
@@ -825,10 +825,6 @@ footer ul li.item {
         transition: all 0.5s;
     }
 
-    section.hero .text-hero h1 {
-        font-size: 36px;
-        line-height: 45px;
-    }
 
     section.hero .text-hero p {
         font-size: 15px;
@@ -980,6 +976,11 @@ footer ul li.item {
     }
 
     /* 👉 Hero Section */
+
+    .hero .cta .btn-primary,
+    .btn-outline-secondary {
+        margin-right: 10px;
+    }
 
     .hero .badge.text-bg-danger {
         font-size: 11px;
