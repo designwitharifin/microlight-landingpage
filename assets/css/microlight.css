@@ -220,7 +220,7 @@ header.getting-started h1.page-header-title {
 
 .banner {
     background: linear-gradient(270deg,
-            #304FFF 40.52%,
+            var(--primary-500) 40.52%,
             rgba(60, 44, 255, 0) 100%), url(/assets/img/Banner/3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -503,8 +503,8 @@ section.superiority .icon-items {
 
 section.try {
     background: linear-gradient(270deg,
-            #304FFF 40.52%,
-            rgba(60, 44, 255, 0) 100%), url(/assets/img/background/bg-banner-btn.jpg);
+            var(--primary-500) 40.52%,
+            rgba(60, 44, 255, 0) 100%), url(/assets/img/Banner/3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -536,7 +536,7 @@ section.try p {
 
 header.getting-started {
     background: linear-gradient(270deg,
-            #304FFF 10.52%,
+            var(--primary-500) 10.52%,
             rgba(85, 28, 255, 0) 100%), url(/assets/img/hero/bg-hero-getting-started.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -560,7 +560,7 @@ header.getting-started p.page-header-subtitle {
 }
 
 .mt-n10 {
-    margin-top: -6rem !important;
+    margin-top: -10rem !important;
 }
 
 .pb-10 {
@@ -615,6 +615,54 @@ section.present .present-header h1 {
 
 section.present .present-img {
     padding: 73px 0;
+}
+
+/**
+ *
+ * [license file]
+ * You can update or custom css for index.html file here
+ * 
+ */
+
+
+/* 👉Card License  Section */
+
+
+section.card-license .title-license h1 {
+    padding: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    color: var(--secondary-900);
+}
+
+section.card-license .subtitle-license h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--secondary-900);
+    padding-top: 43px;
+}
+
+section.card-license .content-item {
+    padding: 5px 0;
+}
+
+section.card-license .content p {
+    color: var(--secondary-500);
+    font-size: 16px;
+    line-height: 197.1%;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+section.card-license {
+    padding-bottom: 122px;
+}
+
+section.card-license .container-xl {
+    padding: 0 44px;
 }
 
 /* 👉 Footer Section */
@@ -928,6 +976,50 @@ footer ul li.item {
     section.present .present-img {
         padding: 71px 0;
     }
+
+    /**
+    *
+    * [license file]
+    * You can update or custom css for index.html file here
+    * 
+    */
+
+
+    /* 👉Card License  Section */
+
+
+    section.card-license .title-license h1 {
+        padding: 15px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    section.card-license .subtitle-license h4 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 21px;
+    }
+
+    section.card-license .content-item {
+        padding: 5px 0;
+    }
+
+    section.card-license .content p {
+        color: var(--secondary-500);
+        font-size: 16px;
+        line-height: 197.1%;
+        font-weight: 400;
+        padding: 5px 0;
+    }
+
+    section.card-license {
+        padding-bottom: 122px;
+    }
+
+    section.card-license hr {
+        color: var(--secondary-400);
+    }
+
 
 }
 
@@ -1299,6 +1391,29 @@ footer ul li.item {
     }
 
 
+}
+
+/* 🖥️ Desktop Devices */
+@media (min-width: 992px) {
+    /* 👉Card License  Section */
+
+    section.card-license .container {
+        padding: 0 200px !important;
+    }
+
+    section.card-license .title-license h1 {
+        padding: 50px 50px 22px 50px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 45px;
+        color: var(--secondary-900);
+    }
+
+    section.card-license hr {
+        padding: 0 200px !important;
+        color: var(--secondary-400);
+    }
 }
 
 /* 🖥️ Desktop Devices */
