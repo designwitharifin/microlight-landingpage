@@ -53,6 +53,7 @@ header.getting-started h1.page-header-title {
     font-family: 'Plus Jakarta Sans';
 }
 
+
 /* 🕹️ Buttons  */
 
 .btn {
@@ -642,19 +643,16 @@ section.card-license .subtitle-license h4 {
     font-weight: 700;
     line-height: 30px;
     color: var(--secondary-900);
-    padding-top: 43px;
+    padding-top: 33px;
 }
 
-section.card-license .content-item {
-    padding: 5px 0;
-}
 
 section.card-license .content p {
     color: var(--secondary-500);
     font-size: 16px;
     line-height: 197.1%;
     font-weight: 400;
-    padding: 5px 0;
+    /* padding: 5px 0; */
 }
 
 section.card-license {
@@ -665,7 +663,44 @@ section.card-license .container-xl {
     padding: 0 44px;
 }
 
-/* 👉 Footer Section */
+
+
+/**
+ *
+ * [license file]
+ * You can update or custom css for index.html file here
+ * 
+ */
+
+
+/* 👉Card License  Section */
+
+
+
+/* 👉 About Section */
+
+section.about {
+    padding: 243px 0;
+    text-align: center;
+}
+
+section.about h1 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 79px;
+    color: var(--secondary-900);
+}
+
+section.about span {
+    color: var(--primary-500);
+}
+
+section.about p {
+    padding: 33px 0;
+    font-size: 20px;
+    line-height: 196%;
+    color: var(--secondary-500);
+}
 
 footer {
     background-color: var(--white);
