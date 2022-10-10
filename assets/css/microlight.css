@@ -118,6 +118,30 @@ header.getting-started h1.page-header-title {
     color: var(--primary-900);
 }
 
+.header-section {
+    max-width: auto;
+    min-width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 145%;
+}
+
+.header-section span {
+    color: var(--primary-500);
+}
+
+.header-section p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--secondary-500);
+}
+
 
 /* 🎨 Colors */
 :root {
@@ -427,7 +451,7 @@ section.tell {
 }
 
 section.tell .text {
-    padding-top: 9rem;
+    padding-top: auto;
 }
 
 section.tell .text h5 {
@@ -667,15 +691,56 @@ section.card-license .container-xl {
 
 /**
  *
- * [license file]
+ * [Examples file]
  * You can update or custom css for index.html file here
  * 
  */
 
 
-/* 👉Card License  Section */
+/* 👉Examples  Section */
 
+section.examples {
+    padding-top: 50px;
+    padding-bottom: 122px;
+}
 
+section.examples .card {
+    border-radius: 14px;
+    /* box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16); */
+    overflow: hidden;
+}
+
+section.examples .card-item .card-body h4 {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 145%;
+}
+
+section.examples .content-item h4 {
+    text-transform: capitalize;
+}
+
+section.examples .content-item .badge {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: var(--danger-100) !important;
+    color: var(--danger-500) !important;
+}
+
+section.examples .card-item .card-body p {
+    font-size: 16px;
+    color: var(--secondary-500);
+    font-weight: 400;
+    line-height: 145%;
+}
+
+section.examples .card-item .card-body a {
+    font-size: 16px;
+    color: var(--primary-500);
+    font-weight: 600;
+    line-height: 145%;
+}
 
 /* 👉 About Section */
 
@@ -1237,6 +1302,25 @@ footer ul li.item {
     section.try a.btn {
         /* display: block; */
         float: none !important;
+    }
+
+    /* 👉 About Section */
+
+    section.about {
+        padding: 75px 0;
+    }
+
+    section.about h1 {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    section.about p {
+        padding: 28px 0;
+        font-size: 16px;
+        line-height: 196%;
+        color: var(--secondary-500);
     }
 
 }
