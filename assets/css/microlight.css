@@ -319,6 +319,14 @@ section.hero {
     padding: 20px 0;
 }
 
+.hero-bg {
+    background-color: hsla(0, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 20% 30%, hsla(240, 100%, 60%, 0.178) 0px, transparent 50%),
+        radial-gradient(at 77% 89%, hsla(289, 67%, 53%, 0.11) 0px, transparent 50%),
+        radial-gradient(at 81% 5%, hsla(193, 100%, 51%, 0.075) 0px, transparent 50%);
+}
+
 section.hero .text-hero {
     padding: 45px 0;
 }
@@ -378,6 +386,15 @@ section.hero .cta {
 
 section.hero .p-hero {
     margin-left: 16px !important;
+}
+
+section.hero .cta .text-license {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--secondary-500);
 }
 
 /* 👉 Info Section */
@@ -706,7 +723,7 @@ section.examples {
 
 section.examples .card {
     border-radius: 14px;
-    /* box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16); */
+    box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
     overflow: hidden;
 }
 
@@ -726,6 +743,10 @@ section.examples .content-item .badge {
     font-weight: 400;
     background-color: var(--danger-100) !important;
     color: var(--danger-500) !important;
+}
+
+section.examples .card-item {
+    margin: 51px 0;
 }
 
 section.examples .card-item .card-body p {
@@ -1321,6 +1342,27 @@ footer ul li.item {
         font-size: 16px;
         line-height: 196%;
         color: var(--secondary-500);
+    }
+
+    section.examples .header-section {
+        max-width: auto;
+        min-width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section.examples h1 {
+        font-size: 36px;
+        line-height: 145%;
+    }
+
+    section.examples p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    section.examples .card-item {
+        margin: 20px 0;
     }
 
 }
