@@ -704,6 +704,11 @@ section.card-license .container-xl {
     padding: 0 44px;
 }
 
+section.card-license a {
+    color: var(--primary-500);
+    font-weight: bold;
+}
+
 
 
 /**
@@ -786,6 +791,10 @@ section.about p {
     font-size: 20px;
     line-height: 196%;
     color: var(--secondary-500);
+}
+
+section.about a {
+    color: var(--primary-500);
 }
 
 footer {
